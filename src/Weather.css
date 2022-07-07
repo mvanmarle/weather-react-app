@@ -1,0 +1,61 @@
+img {
+  max-height: 500px;
+  object-fit: cover;
+}
+
+.card {
+  max-width: 900px;
+  display: block;
+  margin: 0 auto;
+}
+
+.actual-weather {
+  background-color: rgb(253, 235, 231, 0.8);
+  border-radius: 5px;
+  padding: 10px;
+  height: 347px;
+  text-align: center;
+}
+
+.temperature {
+  font-size: 70px;
+  font-weight: bold;
+  color: #77a2c3;
+  background-color: transparent;
+  border: none;
+  line-height: 1;
+}
+
+.description {
+  display: block;
+  margin: 0 auto;
+  color: #77a2c3;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.description:first-letter {
+  text-transform: capitalize;
+}
+
+.icon {
+  display: block;
+  margin: 0 auto;
+}
+
+.units {
+  color: #9e9ea7;
+  cursor: default;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.footer {
+  text-align: center;
+}
+
+@media (max-width: 800px) {
+  img {
+    display: none;
+  }
+}

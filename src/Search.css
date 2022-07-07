@@ -1,0 +1,13 @@
+.Search {
+  max-width: 900px;
+  display: block;
+  margin: 20px auto;
+  background-color: #e9d0d8;
+  border-radius: 5px;
+}
+
+.Search .search-wrapper {
+  display: block;
+  margin: 0 auto;
+  padding: 30px;
+}
