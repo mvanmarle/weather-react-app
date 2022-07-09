@@ -10,7 +10,6 @@ export default function App() {
       <div className="container">
         <h1>Weather App</h1>
         <Search />
-        <Currentweather />
       </div>
     </div>
   );

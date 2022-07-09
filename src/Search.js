@@ -1,16 +1,15 @@
 import React, { useState } from "react";
-import Weather from "./Weather";
+import Currentweather from "./Currentweather";
 
 import "./Search.css";
 
 export default function Search() {
   let [query, setQuery] = useState("");
-  let [message, setMessage] = useState("");
 
   function handleSearch(event) {
     event.preventDefault();
     if (query.length > 0) {
-      setMessage(<Weather city={query} />);
+      <Currentweather query={query} />;
     } else alert(`Enter a city`);
   }
 
@@ -38,12 +37,11 @@ export default function Search() {
                 className="form-control btn-outline-danger opacity-50"
               />
             </div>
-            <div class="col-1">
+            <div className="col-1">
               <button className="btn btn-outline-danger opacity-50">!</button>
             </div>
           </div>
         </form>
-        <p> {message} </p>
       </div>
     </div>
   );
