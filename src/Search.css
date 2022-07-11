@@ -1,4 +1,4 @@
-.Search {
+.search {
   max-width: 900px;
   display: block;
   margin: 20px auto;
@@ -6,7 +6,7 @@
   border-radius: 5px;
 }
 
-.Search .search-wrapper {
+.search .search-wrapper {
   display: block;
   margin: 0 auto;
   padding: 30px;
