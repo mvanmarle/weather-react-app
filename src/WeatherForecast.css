@@ -1,0 +1,8 @@
+.WeatherForecast {
+  background-color: rgb(208, 150, 162, 0.8);
+  border-radius: 5px;
+}
+
+.WeatherForecast .weather-forecast-temperature-max {
+  font-weight: bold;
+}

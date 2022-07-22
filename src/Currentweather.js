@@ -4,6 +4,7 @@ import WeatherTemperature from "./WeatherTemperature";
 import WeatherIcon from "./WeatherIcon";
 
 import "./Weather.css";
+import WeatherForecast from "./WeatherForecast";
 
 export default function Currentweather(props) {
   return (
@@ -22,23 +23,21 @@ export default function Currentweather(props) {
                 <h6>
                   Last updated: <FormattedDate date={props.data.date} />
                 </h6>
-                <WeatherIcon code={props.data.icon} size={52} />
+                <WeatherIcon code={props.data.icon} size={52} color="#77a2c3" />
                 <p>
                   <WeatherTemperature celsius={props.data.temperature} />
                   <div className="description">{props.data.description}</div>
                 </p>
                 <h6>
-                  <i class="fa-solid fa-wind"></i>:{" "}
-                  <span className="wind"> {props.data.wind}</span>m/h
+                  💨: <span className="wind"> {props.data.wind}</span>m/h
                 </h6>
                 <h6>
-                  <i class="fa-solid fa-droplet"></i>:
-                  <span className="humidity">{props.data.humidity}</span>%
+                  💧: <span className="humidity">{props.data.humidity}</span>%
                 </h6>
               </div>
             </div>
             <div className="col-sm-6 mt-5">
-              <div className="weather-forecast">Monday Tuesday Wednesday</div>
+              <WeatherForecast coordinates={props.data.coordinates} />
             </div>
           </div>
         </div>
